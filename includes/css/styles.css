@@ -50,8 +50,11 @@ Notes:	 Hand coded for Udemy.com
    }
 .navbar-brand img{
 }
+#drop{
+  float: left;
+}
 #home{
-  float: right;
+  
   padding: 15px 0 0px 20px;
  }
 #searchInput{
@@ -88,7 +91,9 @@ Notes:	 Hand coded for Udemy.com
 #resp{
   align-items: center;
 }
-
+.unstyled{
+  list-style: none;
+}
 
 .recommended ul li a {
    color: #1b1d20;
@@ -168,7 +173,7 @@ text-align: -webkit-match-parent;
     }
     #slide1 p{
       font-size: 15px;
-    
+
     }
     #portfolio{
       margin-top: 70px;
