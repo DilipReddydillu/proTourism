@@ -1,281 +1,240 @@
 <!DOCTYPE html>
 
 <html>
-	<head>
+<head>
 
-		<!-- Website Title & Description for Search Engine purposes -->
-		<title>Code a Responsive Website with Twitter Bootstrap 3</title>
-		<meta name="description" content="Learn how to code your first responsive website with the new Twitter Bootstrap 3.">
+	<!-- Website Title & Description for Search Engine purposes -->
+	<title></title>
+	<meta name="description" content="">
 
-		<!-- Mobile viewport optimized -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!-- Mobile viewport optimized -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<!-- Bootstrap CSS -->
-		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+	<!-- Bootstrap CSS -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet' type='text/css'>
 
-		<!-- Custom CSS -->
-		<link rel="stylesheet" href="includes/css/styles.css">
+	<!-- Custom CSS -->
+	<link href="includes/css/styles.css" rel="stylesheet">
 
-		<!-- Include Modernizr in the head, before any other Javascript -->
-		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+	<!-- Include Modernizr in the head, before any other Javascript -->
+	<script src="includes/js/bootstrap.min.js"></script>
 
-	</head>
-	<body>
+</head>
 
-		<div class="container" id="main">
 
-			<div class="navbar navbar-fixed-top">
-				<div class="container" >
 
-					<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-					<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button" >
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
+<body class="body" >
+	<div class="container">
 
-					<div>
-						<a class="navbar-brand" href="/"><img src="images/logo3	.jpg" alt="Your Logo"></a>
-					</div>
+		<div class="navbar navbar-default navbar-fixed-top">
 
-					<div class="nav-collapse collapse navbar-responsive-collapse">
-						<ul class="nav navbar-nav" id="home">
-							<li class="active" >
-								<a href="index.html">Home</a>
-							</li>
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-responsive-collapse" aria-expanded="true">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
 
-							<li  >
-								<a href="#">Portfolio</a>
-							</li>
+				<div id="logo">
+					<a class="navbar-brand" href="/"><img src="images/logo3	.jpg" alt="Your Logo"></a>
+				</div>
+			</div>
 
-							<li class="dropdown">
-								<a href="" class="dropdown-toggle" data-toggle="dropdown">Services <strong class="caret"></strong></a>
-									<ul class="dropdown-menu">
-										<li>
-											<a href="#">menu</a>
-										</li>
 
-										<li>
-											<a href="#">tool</a>
-										</li>
-
-										<li>
-											<a href="#">menu</a>
-										</li>
-
-										<li class="divider"></li>
-										<li class="dropdown-header">more services</li>
-
-										<li>
-											<a href="#">web design</a>
-										</li>
-
-										<li>
-											<a href="#">content creation</a>
-										</li>
-
-										<li>
-											<a href="#">marketing</a>
-										</li>
-
-									</ul>
-							</li>
-
-							<form class="navbar-form pull-left" >
+			<div class="navbar-collapse collapse navbar-responsive-collapse">
+					<ul class="nav navbar-nav navbar-right" id="home">
+						<li>
+							<a href="index.html"><span class="glyphicon glyphicon-home">Home</span> </a>
+						</li>
+						<li class="active">
+							<a href="portfolio2.html"><span class="glyphicon glyphicon-asterisk">PORTFOLIO</span></a>
+						</li>
+						<!-- <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li> -->
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Holiday Packages <strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-chevron-right">WILDLIFE PACKAGES</span></a>
+								</li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-chevron-right">HILLSTATION PACKAGE</span></a>
+								</li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-chevron-right">ADVENTURE PACKAGE</span></a>
+								</li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-chevron-right">PILGRIMAGE PACKAGE</span></a>
+								</li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-chevron-right">BEACH HOLIDAY PACKAGE</span></a>
+								</li>
+								<li class="divider"></li>
+								<li class="dropdown-header">DESTINATIONS</li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-chevron-right">KERALA</span></a>
+								</li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-chevron-right">GUJARAT</span></a>
+								</li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-chevron-right">GOA</span></a>
+								</li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-chevron-right">JAMMU&KASHMIR</span></a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<form class="navbar-form pull-left">
 								<input type="text" class="form-control" placeholder="Search this site..." id="searchInput" width="100px">
 								<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
 							</form><!--end Navbar-form-->
-
-						</ul><!--END nav navbar-nav-->
-
-					</div><!--END nav-collapse collapse navbar-responsive-collapse-->
-				</div><!--END container-->
-			</div><!-- end navbar -->
-<!--///////////////////////////////////////////////////////////////////////////-->
-
-
-<div class="container" style:"margin-top:10px;"" >
-<h2>Basic List Group</h2>
-<div class="portfolio" style="padding-top:10px; margin-top:10px;">
-<ul class="list-group">
-<li class="list-group-item list-group-item-success">
-
-
-
-
-		<div class="container">
-
-		 <div class="panel panel-default" style="padding:0px";><h3 style="text-align:center;">Kerela BackWaters</h3></div>
-
-			 <div class="col-3">
- 				<img src="images/kerala-offersp1.jpg" class="img-responsive" alt="kerela waters" />
- 			</div>
-
- 			<div class="col-3">
- 				<img src="images/rajasthanp2.jpg" class="img-responsive" alt="rajasthan" />
- 			</div>
-
- 			<div class="col-3">
- 				<img src="images/kashmir-summerp3.jpg" class="img-responsive" alt="kashmir" />
- 			</div>
-
- 			<div class="col-3">
- 				<img src="images/andaman-homep4.jpg" class="img-responsive" alt="andaman" />
- 			</div>
-
-
-		</div>
-
-
-
-
-
-</li>
-<li class="list-group-item list-group-item-warning">
-	<div class="container" style=" margin-top:10px;">
-
-	 <div class="panel panel-default" style="padding:0px";>	<h3 style="text-align:center;">Best Of Rajasthan</h3></div>
-
-		<div class="col-3">
-			<img src="images/img01p5.jpg" class="img-responsive" alt="top destination" />
-		</div>
-
-		<div class="col-3">
-			<img src="images/img02p6.jpg" class="img-responsive" alt="activities" />
-		</div>
-
-		<div class="col-3">
-			<img src="images/img03p7.jpg" class="img-responsive" alt="accomodation" />
-		</div>
-
-		<div class="col-3">
-			<img src="images/balajichilkur.jpg" class="img-responsive" alt="balajitemple" />
-		</div>
-	</div>
-
-</li>
-<li class="list-group-item">
-	<div class="container" style=" margin-top:10px;">
-
-		 <div class="panel panel-default" style="padding:0px";><h3 style="text-align:center;">WildLife</h3></div>
-
-		<div class="col-3">
-			<img src="images/img9p9.jpg" class="img-responsive" alt="tiger" />
-		</div>
-
-		<div class="col-3">
-			<img src="images/img11p10.jpg" class="img-responsive" alt="rihno" />
-		</div>
-
-		<div class="col-3">
-			<img src="images/img12p12.jpg" class="img-responsive" alt="bird watching" />
-		</div>
-
-		<div class="col-3">
-			<img src="images/gir-national-parkp12.jpg" class="img-responsive" alt="king" />
-		</div>
-	</div>
-
-
-	<div class="container" style=" margin-top:10px;">
-
-		 <div class="panel panel-default" style="padding:0px";><h3 style="text-align:center;">Pilgrimage</h3></div>
-
-		<div class="col-3">
-			<img src="images/humayun-tombp13.jpg" class="img-responsive" alt="view" />
-		</div>
-
-		<div class="col-3">
-			<img src="images/khajurahop14.jpg" class="img-responsive" alt="view" />
-		</div>
-
-		<div class="col-3">
-			<img src="images/gateway-of-indiap15.jpg" class="img-responsive" alt="view watching" />
-		</div>
-
-		<div class="col-3">
-			<img src="images/amber-fort1p15.jpg" class="img-responsive" alt="king" />
-		</div>
-	</div>
-
-</li>
-<li class="list-group-item">
-	<div class="container" style=" margin-top:10px;">
-
-		 <div class="panel panel-default" style="padding:0px";><h3 style="text-align:center;">Kashmir Special</h3></div>
-
-		<div class="col-3">
-			<img src="images/p17.jpg" class="img-responsive" alt="view" />
-		</div>
-
-		<div class="col-3" >
-			<img src="images/imageedit_6_9039943739.jpg" class="img-responsive" alt="view"   />
-		</div>
-
-		<div class="col-3">
-			<img src="images/p17.jpg" class="img-responsive" alt="view watching"  />
-		</div>
-
-		<div class="col-3">
-			<img src="images/imageedit_4_3795223169.jpg" class="img-responsive" alt="king" />
-		</div>
-	</div>
-</li>
-
-<li class="list-group-item">
-	<div class="container" style=" margin-top:10px;">
-
-		 <div class="panel panel-default" style="padding:0px;" ><h3 style="text-align:center;">Top Destination</h3></div>
-
-		<div class="col-3">
-			<img src="images/jewells-of-kashmirp21.jpg" class="img-responsive" alt="view" />
-		</div>
-
-		<div class="col-3">
-			<img src="images/exotic-kashmirp22.jpg" class="img-responsive" alt="view" />
-		</div>
-
-		<div class="col-3">
-			<img src="images/golden-triangle-p23.jpg" class="img-responsive" alt="view watching" />
-		</div>
-
-		<div class="col-3">
-			<img src="images/tulip-gardenp24.jpg" class="img-responsive" alt="king" />
-		</div>
-	</div>
-
-</li>
-	<li class="list-group-item">
-		<div class="container" style=" margin-top:10px;">
-
-			 <div class="panel panel-default" style="padding:0px";><h3 style="text-align:center;">Trekking</h3></div>
-
-			<div class="col-3">
-				<img src="images/fishing-tourp25.jpg" class="img-responsive" alt="view" />
-			</div>
-
-			<div class="col-3">
-				<img src="images/skiing-tour1p26.jpg" class="img-responsive" alt="view" />
-			</div>
-
-			<div class="col-3">
-				<img src="images/amarnath-yatap27.jpg" class="img-responsive" alt="view watching" />
-			</div>
-
-			<div class="col-3">
-				<img src="images/dachigam-wildlife-tourp28.jpg" class="img-responsive" alt="king" />
+						</li>
+					</ul><!--END nav navbar-nav-->
 			</div>
 		</div>
-	</li>
-</ul>
+	</div>
+
+
+
+<div class="container"  >
+<hr>
+<div class="body margin:0 auto;">
+	<div class="container" id="portfolio" style="margin-bottom:5px;">
+
+		<div class="col-sm-4">
+			<img src="images/img01p5.jpg" class="img-responsive center-block img-thumbnail" alt="top destination" />
+		</div>
+
+		<div class="col-sm-4">
+			<img src="images/img02p6.jpg" class="img-responsive center-block img-thumbnail" alt="activities" />
+		</div>
+
+		<div class="col-sm-4">
+			<img src="images/img03p7.jpg" class="img-responsive center-block img-thumbnail" alt="accomodation" />
+		</div>
+
+	</div>
+	<a href="" target="_blank"class="btn btn-success btn-block"><mark>Best Of Rajasthan</mark></a>
+<hr>
+<div class="container" style="margin-bottom:5px;">
+
+		 <div class="col-sm-4">
+					<img src="images/kerala-offersp1.jpg" class="img-responsive center-block img-thumbnail"  alt="kerela waters" >
+		</div>
+
+		<div class="col-sm-4">
+			<img src="images/andaman-homep4.jpg" class="img-responsive center-block img-thumbnail" alt="kerela waters" />
+
+		</div>
+		<div class="col-sm-4">
+			<img src="images/kashmir-summerp3.jpg" class="img-responsive center-block img-thumbnail" alt="rajasthan" />
+
+		</div>
+
+	</div>
+	<a href="" target="_blank"class="btn btn-primary btn-block">Kerela BackWaters</a>
+<hr>
+
+ <div class="container" style="margin-bottom:5px;">
+
+ 	<div class="col-sm-4">
+ 		<img src="images/img9p9.jpg" class="img-responsive center-block img-thumbnail" alt="tiger" />
+ 	</div>
+
+ 	<div class="col-sm-4">
+ 		<img src="images/img11p10.jpg" class="img-responsive center-block img-thumbnail" alt="rihno" />
+ 	</div>
+
+ 	<div class="col-sm-4">
+ 		<img src="images/img12p12.jpg" class="img-responsive center-block img-thumbnail" alt="bird watching" />
+ 	</div>
+ </div>
+ <a href="" target="_blank"class="btn btn-info btn-block">Wild Life</a>
+
+ <hr>
+ 			<div class="container" style="margin-bottom:5px;">
+
+ 				<div class="col-sm-4">
+ 					<img src="images/pilg1.jpg" class="img-responsive center-block img-thumbnail" alt="view" />
+ 				</div>
+
+ 				<div class="col-sm-4">
+ 					<img src="images/piligrm.jpg" class="img-responsive center-block img-thumbnail" alt="view" />
+ 				</div>
+
+ 				<div class="col-sm-4">
+ 					<img src="images/gateway-of-indiap15.jpg" class="img-responsive center-block img-thumbnail" alt="view watching" />
+ 				</div>
+ 			</div>
+ 			<a href="" target="_blank"class="btn btn-warning btn-block">Pilgrimage</a>
+
+ <hr>
+ 			<div class="container" style="margin-bottom:5px;">
+
+ 				<div class="col-sm-4">
+ 					<img src="images/p17.jpg" class="img-responsive center-block img-thumbnail" alt="view" />
+ 				</div>
+
+ 				<div class="col-sm-4" >
+ 					<img src="images/imageedit_6_9039943739.jpg" class="img-responsive center-block img-thumbnail" alt="view"   />
+ 				</div>
+
+ 				<div class="col-sm-4">
+ 					<img src="images/imageedit_4_3795223169.jpg" class="img-responsive center-block img-thumbnail" alt="view watching img-thumbnail"  />
+ 				</div>
+
+ 			</div>
+ 			<a href="" target="_blank"class="btn btn-danger btn-block">Kashmir Special</a>
+
+ <hr>
+ 			<div class="container" style="margin-bottom:5px;">
+
+ 				<div class="col-sm-4">
+ 					<img src="images/jewells-of-kashmirp21.jpg" class="img-responsive center-block img-thumbnail" alt="view" />
+ 				</div>
+
+ 				<div class="col-sm-4">
+ 					<img src="images/exotic-kashmirp22.jpg" class="img-responsive center-block img-thumbnail" alt="view" />
+ 				</div>
+
+ 				<div class="col-sm-4">
+ 					<img src="images/golden-triangle-p23.jpg" class="img-responsive center-block img-thumbnail" alt="view watching" />
+ 				</div>
+ 			</div>
+ 			<a href="" target="_blank"class="btn btn-info btn-block">Top Destination</a>
+
+ <hr>
+ 			<div class="container" style="margin-bottom:5px;">
+ 				<!-- <h3 style="text-align:center;">Trekking</h3> -->
+
+ 				<div class="col-sm-4">
+ 					<img src="images/fishing-tourp25.jpg" class="img-responsive center-block img-thumbnail" alt="view" />
+ 				</div>
+
+ 				<div class="col-sm-4">
+ 					<img src="images/skiing-tour1p26.jpg" class="img-responsive center-block img-thumbnail" alt="view" />
+ 				</div>
+
+ 				<div class="col-sm-4">
+ 					<img src="images/amarnath-yatap27.jpg" class="img-responsive center-block img-thumbnail" alt="view watching" />
+ 				</div>
+
+ 			</div>
+ 			<a href="" target="_blank"class="btn btn-success btn-block"><strong>Trekking</strong></a>
+
 </div>
-</div>
-</div
-<!--///////////////////////////////////////////////////////////////////////////-->
+
+</div><hr>
+
+
+
 <footer class="footerbk" style="padding-bottom:20px; " >
 
-	<div class="container" >
+
 		<div class="row" style="margin-top:-20px">
 
 			<div class="col-sm-4">
